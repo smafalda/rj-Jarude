@@ -1,3 +1,1 @@
-ctrl shift end
-IdClientes e Numero
 vai na api do box ve como acha os dados com o nome da planilha, após isso, se o nome arc4 tiver baixa senao nao baixa
