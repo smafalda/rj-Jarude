@@ -15,7 +15,15 @@ import base64
 ABSOLUTE_PATH = os.getcwd()
 os.mkdir(ABSOLUTE_PATH+'\\Resultados')
 items = client.search().query(query='"-ARC97-"', file_extensions=['pdf'], content_types='name', ancestor_folder_ids=31436627801,type='file')
+data_temp =''
+idanterior=''
 for item in items:
-    box_file = client.file(file_id=item.id).get()
+    if item.created_at < data_temp:
+        print("Arquivo recente existente")
+    else:
+        idRecente=item.id
+        data_temp = item.created_at
+        idanterior= item.id
+    box_file = client.file(file_id=idRecente).get()
     output_file = open(ABSOLUTE_PATH+'\\Resultados\\'+ box_file.name, 'wb')
     box_file.download_to(output_file)
