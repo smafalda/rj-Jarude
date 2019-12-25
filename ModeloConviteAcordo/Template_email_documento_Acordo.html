@@ -87,12 +87,7 @@
 			/*@editable*/text-align:center;
 
         }
-        div.bordertable{
-            border: 1px solid;
-            border-color:#3232CD;
-        }
 		table.dadosAcordo{ 
-             display: none;
 			 width: 100%;
         }
         div.cabec{
@@ -102,7 +97,6 @@
 
         }
         div.bordertable{
-            border: 1px solid;
             border-color:rgb(1, 0, 83);
         }
 	/*
@@ -685,7 +679,7 @@
                     <td class="mcnCaptionLeftImageContent" valign="top">
                     
                         
-                        <img alt="" src="http://gestao3pontozero.com.br/wp-content/uploads/2016/01/Negociar.jpg" width="132" style="max-width:719px; margin-top: 50px;"  class="mcnImage">
+                        <img alt="" src="http://gestao3pontozero.com.br/wp-content/uploads/2016/01/Negociar.jpg" width="120" style="max-width:719px; margin-top: 50px; margin-bottom: -15px;"  class="mcnImage">
                         
                     
                     </td>
@@ -724,6 +718,17 @@
 				<!--[if mso]>
 				<td valign="top" width="600" style="width:600px;">
 				<![endif]-->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%; margin-bottom: 3px;">
+					<tbody class="mcnDividerBlockOuter">
+						<tr>
+							<td class="mcnDividerBlockInner" style="min-width:100%; ">
+								<table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+									<tbody><tr>
+										<td>
+											<span></span>
+										</td>
+									</tr>
+								</tbody></table>
                 <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
                         
@@ -754,7 +759,7 @@
 </table>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<div class="cabec" ><span style="font-size:20px">Clique para vizualizar os dados do Acordo:</span></div>   
+<div class="mcnTextContent"><strong><span style="font-size:14px;">Detalhes do Acordo ARC'+$acordo/NumAcordo+:</span></strong></div>   
 <div class="bordertable">
    <table cellspacing="0" class="dadosAcordo">
         <tr><td>CNJ</td><td>+'$acordo/NumCNJ'</td></tr>
@@ -764,22 +769,16 @@
         <tr><td>Advogado Responsável</td><td>+'$acordo/Responsible'</td></tr>
    </table>
    </div>
-
-    <script>
-        $("div.cabec").click(function(){
-        $("table.dadosAcordo").slideToggle();
-        });
-    </script>
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
-    <tbody class="mcnDividerBlockOuter">
-        <tr>
-            <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
-                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
-                    <tbody><tr>
-                        <td>
-                            <span></span>
-                        </td>
-                    </tr>
+   <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%; margin-bottom: -15px; margin-top: 5px;">
+	<tbody class="mcnDividerBlockOuter">
+		<tr>
+			<td class="mcnDividerBlockInner" style="min-width:100%; ">
+				<table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+					<tbody><tr>
+						<td>
+							<span></span>
+						</td>
+					</tr>
 				</tbody></table>
 				
 <!--            
@@ -825,7 +824,15 @@
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+</table>
+<table class="mcnCaptionLeftTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width=100% >
+	<tbody><tr>
+		<td valign="top" class="mcnTextContent" ><h1 class="null"></h1>	
+			<p>Se você deseja realizar o dowload do documento para o seu computador pessoal, clique sobre o botão Baixar.</p>
+		</td>
+	</tr>
+</tbody></table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
     <tbody class="mcnDividerBlockOuter">
         <tr> </tr>
     </tbody>
@@ -843,7 +850,7 @@
                     <td class="mcnCaptionLeftImageContent" valign="top">
                     
                         
-                        <img alt="" src="https://www.abcrede.com.br/assets/site/imagens/download-upload.png" width="250" style="max-width:300px;" class="mcnImage">
+                      <!---->  <img alt="" src="https://www.abcrede.com.br/assets/site/imagens/download-upload.png" width="180" style="max-width:300px; margin-top: -20px;" class="mcnImage">
                         
                     
                     </td>
@@ -852,11 +859,11 @@
             <table class="mcnCaptionLeftTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="264">
                 <tbody><tr>
                     <td style="padding-top:40px; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="middle" align="center" class="mcnButtonBlockInner">
-                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 3px;background-color: #356FB8;">
+                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="margin-top: -20px; border-collapse: separate !important;border-radius: 3px;background-color: #356FB8;">
                     <tbody>
                         <tr>
-                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 15px;">
-                                <a class="mcnButton " title="Baixar '+$email_documento_acordo/TipoDocumento+'" href="'+ $link_download +'" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Baixar </a>
+                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 14px; padding: 15px; ">
+                                <a class="mcnButton " title="Baixar '+$email_documento_afont-weight: bold;letter-spacing: normal;lcordo/TipoDocumento+'" href="'+ $link_download +'" target="_blank" style="line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF; ">Baixar '+$email_documento_acordo/TipoDocumento+'</a>
                             </td>
                         </tr>
                     </tbody>
